@@ -53,8 +53,5 @@ python main.py --config ./config/ctrgcn_V2_BM_3d.yaml --phase test --save-score 
 ```
 # Ensemble
 
-# Author
-```
-Jinfu Liu, Baiqiao yin, Jiaying Lin, Jiajun Wen, Yue Li, Mengyuan Liu.
-```
+# Contact
 For any questions, feel free to contact: liujf69@mail2.sysu.edu.cn
