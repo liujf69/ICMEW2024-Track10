@@ -1,5 +1,35 @@
 # ICMEW2024-Track10
 ICMEW2024-Track #10: Skeleton-based Action Recognition
+
+# Dataset
+**1. Put your test dataset into the ```Test_dataset``` folder.**
+```
+Please note that, the **naming** of the test dataset must comply with the validation datasets issued by the competition,
+e.g. P000S00G10B10H10UC022000LC021000A000R0_08241716.txt. (This is a training data sample because subject_id is **000**)
+e.g. P001S00G20B40H20UC072000LC021000A000R0_08241838.txt. (This is a **CSv1** validation data sample because subject_id is **001**)
+e.g. P002S00G10B50H30UC062000LC092000A000R0_08250945.txt. (This is a **CSv2** validation data sample because subject_id is **002**)
+```
+**2. Extract 2D Pose from the test dataset you provided, run the following code:**
+```
+cd Process_data
+python extract_2dpose.py --test_dataset_path ../Test_dataset
+```
+Please note that, the path **../Test_dataset** is the path of the test dataset in the first step, and we recommend using an absolute path. <br />
+After running this code, we will generate two files named **V1.npz** and **V2.npz** in the **Process_data/save_2d_pose** folder.
+
+**3. Estimate 3d pose from 2d pose.** <br />
+First, you must download the 3d pose checkpoint from [here](https://drive.google.com/file/d/1citX7YlwaM3VYBYOzidXSLHb4lJ6VlXL/view?usp=sharing). <br />
+Then, you must put the downloaded checkpoint into the **./Process_data/checkpoint/pose3d/FT_MB_lite_MB_ft_h36m_global_lite** folder. <br />
+Finally, you must run the following code:
+```
+cd Process_data
+python estimate_3dpose.py --test_dataset_path ../Test_dataset
+```
+After running this code, we will generate two files named **V1.npz** and **V2.npz** in the **Process_data/save_3d_pose** folder.
+
+# Model inference
+
+
 # Author
 ```
 Jinfu Liu, Baiqiao yin, Jiaying Lin, Jiajun Wen, Yue Li, Mengyuan Liu.
