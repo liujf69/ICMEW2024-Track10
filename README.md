@@ -30,7 +30,7 @@ After running this code, we will generate two files named **V1.npz** and **V2.np
 # Model inference
 1. Run the following code separately to obtain classification scores using different model weights.
 
-**V1:**
+**CSv1:**
 ```
 python main.py --config ./config/ctrgcn_V1_J.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V1_J.pt --device 0
 python main.py --config ./config/ctrgcn_V1_B.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V1_B.pt --device 0
@@ -41,7 +41,7 @@ python main.py --config ./config/ctrgcn_V1_B_3d.yaml --phase test --save-score T
 python main.py --config ./config/ctrgcn_V1_JM_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V1_JM_3d.pt --device 0
 python main.py --config ./config/ctrgcn_V1_BM_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V1_BM_3d.pt --device 0
 ```
-**V2:**
+**CSv2:**
 ```
 python main.py --config ./config/ctrgcn_V2_J.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V2_J.pt --device 0
 python main.py --config ./config/ctrgcn_V2_B.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V2_B.pt --device 0
