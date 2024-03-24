@@ -28,8 +28,7 @@ python estimate_3dpose.py --test_dataset_path ../Test_dataset
 After running this code, we will generate two files named **V1.npz** and **V2.npz** in the **Process_data/save_3d_pose** folder.
 
 # Model inference
-1. Run the following code separately to obtain classification scores using different model weights.
-
+**1. Run the following code separately to obtain classification scores using different model weights.** <br />
 **CSv1:**
 ```
 python main.py --config ./config/ctrgcn_V1_J.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V1_J.pt --device 0
@@ -51,6 +50,29 @@ python main.py --config ./config/ctrgcn_V2_J_3d.yaml --phase test --save-score T
 python main.py --config ./config/ctrgcn_V2_B_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V2_B_3d.pt --device 0
 python main.py --config ./config/ctrgcn_V2_JM_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V2_JM_3d.pt --device 0
 python main.py --config ./config/ctrgcn_V2_BM_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V2_BM_3d.pt --device 0
+```
+**2. Verification report of the UAV dataset** <br />
+**CSv1:**
+```
+ctrgcn_V1_J.pt: 43.52%
+ctrgcn_V1_B.pt: 43.32%
+ctrgcn_V1_JM.pt: 36.25%
+ctrgcn_V1_BM.pt: 35.86%
+ctrgcn_V1_J_3d.pt: 35.14%
+ctrgcn_V1_B_3d.pt: 35.66%
+ctrgcn_V1_JM_3d.pt:
+ctrgcn_V1_BM_3d.pt:
+```
+**CSv2:**
+```
+ctrgcn_V2_J.pt: 69.00%
+ctrgcn_V2_B.pt: 68.68%
+ctrgcn_V2_JM.pt: 57.93%
+ctrgcn_V2_BM.pt: 
+ctrgcn_V2_J_3d.pt: 
+ctrgcn_V2_B_3d.pt: 
+ctrgcn_V2_JM_3d.pt:
+ctrgcn_V2_BM_3d.pt:
 ```
 # Ensemble
 
