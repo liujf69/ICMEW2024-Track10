@@ -106,5 +106,7 @@ Please note that when running the above code, you may need to carefully **check 
 ...
 ## Ensemble Mix_GCN and Ske_former
 ...
+# Suggestion
+We recommend comprehensively considering the three ensemble results **Ensemble Mix_GCN**, **Ensemble Ske_former**, and **Ensemble Mix_GCN and Ske_former**.
 # Contact
 For any questions, feel free to contact: liujf69@mail2.sysu.edu.cn
