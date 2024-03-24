@@ -70,7 +70,7 @@ ctrgcn_V1_BM.pt: 35.86%
 ctrgcn_V1_J_3d.pt: 35.14%
 ctrgcn_V1_B_3d.pt: 35.66%
 ctrgcn_V1_JM_3d.pt:
-ctrgcn_V1_BM_3d.pt:
+ctrgcn_V1_BM_3d.pt: 30.89%
 ```
 **CSv2:**
 ```
