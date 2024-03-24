@@ -84,6 +84,8 @@ ctrgcn_V2_B_3d.pt:
 ctrgcn_V2_JM_3d.pt:
 ctrgcn_V2_BM_3d.pt:
 ```
+## Run Ske_former
+...
 # Ensemble
 ## Ensemble Mix_GCN
 **1.** After running the code of model inference, we will obtain classification score files corresponding to each weight in the **output folder** named **epoch1_test_score.pkl**. <br />
@@ -100,5 +102,9 @@ Please note that when running the above code, you may need to carefully **check 
 ```
 Emsemble Mix_GCN: 45.71%
 ```
+## Ensemble Ske_former
+...
+## Ensemble Mix_GCN and Ske_former
+...
 # Contact
 For any questions, feel free to contact: liujf69@mail2.sysu.edu.cn
