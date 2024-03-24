@@ -77,7 +77,7 @@ ctrgcn_V1_BM_3d.pt: 30.89%
 ctrgcn_V2_J.pt: 69.00%
 ctrgcn_V2_B.pt: 68.68%
 ctrgcn_V2_JM.pt: 57.93%
-ctrgcn_V2_BM.pt: 
+ctrgcn_V2_BM.pt: 58.45%
 ctrgcn_V2_J_3d.pt: 
 ctrgcn_V2_B_3d.pt: 
 ctrgcn_V2_JM_3d.pt:
