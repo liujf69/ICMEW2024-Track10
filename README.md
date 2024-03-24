@@ -1,6 +1,6 @@
 # ICMEW2024-Track10
-ICMEW2024-Track #10: Skeleton-based Action Recognition
-
+ICMEW2024-Track #10: Skeleton-based Action Recognition. <br />
+Please install the environment based on **mix_GCN.yml**. <br />
 # Dataset
 **1. Put your test dataset into the ```Test_dataset``` folder.**
 ```
@@ -28,7 +28,6 @@ python estimate_3dpose.py --test_dataset_path ../Test_dataset
 After running this code, we will generate two files named **V1.npz** and **V2.npz** in the **Process_data/save_3d_pose** folder.
 
 # Model inference
-Please install the environment based on **mix_GCN.yml**. <br />
 **1. Run the following code separately to obtain classification scores using different model weights.** <br />
 **CSv1:**
 ```
