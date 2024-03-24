@@ -28,6 +28,10 @@ python estimate_3dpose.py --test_dataset_path ../Test_dataset
 After running this code, we will generate two files named **V1.npz** and **V2.npz** in the **Process_data/save_3d_pose** folder.
 
 # Model inference
+## Run Mix_GCN
+```
+cd ./Model_inference/Mix_GCN
+```
 **1. Run the following code separately to obtain classification scores using different model weights.** <br />
 **CSv1:**
 ```
