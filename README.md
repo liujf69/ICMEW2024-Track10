@@ -1,5 +1,6 @@
 # ICMEW2024-Track10
 ICMEW2024-Track #10: Skeleton-based Action Recognition. <br />
+![image](https://github.com/liujf69/ICMEW2024-Track10/blob/main/framework.png)
 Please install the environment based on **mix_GCN.yml**. <br />
 # Dataset
 **1. Put your test dataset into the ```Test_dataset``` folder.**
