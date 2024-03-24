@@ -89,13 +89,13 @@ ctrgcn_V2_BM_3d.pt:
 **1.** After running the code of model inference, we will obtain classification score files corresponding to each weight in the **output folder** named **epoch1_test_score.pkl**. <br />
 **2.** You can obtain the final classification accuracy of CSv1 by running the following code:
 ```
-python test_ensemble.py --val_sample ./Process_data/CS_test_V1.txt --benchmark V1
+python Ensemble_MixGCN.py --val_sample ./Process_data/CS_test_V1.txt --benchmark V1 --ctrgcn_J2d_Score <path of the epoch1_test_score.pkl>
 ```
 **3.** You can obtain the final classification accuracy of CSv2 by running the following code:
 ```
-python test_ensemble.py --val_sample ./Process_data/CS_test_V2.txt --benchmark V2
+python Ensemble_MixGCN.py --val_sample ./Process_data/CS_test_V2.txt --benchmark V2 --ctrgcn_J2d_Score <path of the epoch1_test_score.pkl>
 ```
-Please note that when running the above code, you may need to carefully **check the paths** for each **epoch1_test_score.pkl** file and the **val_sample** to prevent errors.
+Please note that when running the above code, you may need to carefully **check the paths** for each **epoch1_test_score.pkl** file and the **val_sample** to prevent errors. <br />
 **CSv1:**
 ```
 Emsemble Mix_GCN: 45.71%
