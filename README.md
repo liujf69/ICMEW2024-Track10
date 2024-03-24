@@ -16,6 +16,10 @@ python extract_2dpose.py --test_dataset_path ../Test_dataset
 ```
 Please note that, the path **../Test_dataset** is the path of the test dataset in the first step, and we recommend using an absolute path. <br />
 After running this code, we will generate two files named **V1.npz** and **V2.npz** in the **Process_data/save_2d_pose** folder.
+Copy the **Process_data/save_2d_pose** folder to **Model_inference/Mix_GCN/dataset**:
+```
+cp -r ./Process_data/save_2d_pose Model_inference/Mix_GCN/dataset
+```
 
 **3. Estimate 3d pose from 2d pose.** <br />
 First, you must download the 3d pose checkpoint from [here](https://drive.google.com/file/d/1citX7YlwaM3VYBYOzidXSLHb4lJ6VlXL/view?usp=sharing), and install the environment based on **pose3d.yml** <br />
@@ -26,6 +30,10 @@ cd Process_data
 python estimate_3dpose.py --test_dataset_path ../Test_dataset
 ```
 After running this code, we will generate two files named **V1.npz** and **V2.npz** in the **Process_data/save_3d_pose** folder.
+Copy the **Process_data/save_3d_pose** folder to **Model_inference/Mix_GCN/dataset**:
+```
+cp -r ./Process_data/save_3d_pose Model_inference/Mix_GCN/dataset
+```
 
 # Model inference
 ## Run Mix_GCN
