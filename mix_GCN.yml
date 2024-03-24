@@ -145,4 +145,3 @@ dependencies:
       - tzdata==2024.1
       - werkzeug==3.0.1
       - yacs==0.1.8
-prefix: /home/lmy/miniconda3/envs/HAR
