@@ -10,7 +10,7 @@ e.g. P000S00G10B10H10UC022000LC021000A000R0_08241716.txt. (This is a training da
 e.g. P001S00G20B40H20UC072000LC021000A000R0_08241838.txt. (This is a **CSv1** validation data sample because subject_id is **001**)
 e.g. P002S00G10B50H30UC062000LC092000A000R0_08250945.txt. (This is a **CSv2** validation data sample because subject_id is **002**)
 ```
-**2. Extract 2D Pose from the test dataset you provided, run the following code:**
+**2. Extract 2d pose from the test dataset you provided, run the following code:**
 ```
 cd Process_data
 python extract_2dpose.py --test_dataset_path ../Test_dataset
