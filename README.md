@@ -98,9 +98,9 @@ python Ensemble_MixGCN.py --val_sample ./Process_data/CS_test_V1.txt --benchmark
 python Ensemble_MixGCN.py --val_sample ./Process_data/CS_test_V2.txt --benchmark V2 --ctrgcn_J2d_Score <path of the epoch1_test_score.pkl>
 ```
 Please note that when running the above code, you may need to carefully **check the paths** for each **epoch1_test_score.pkl** file and the **val_sample** to prevent errors. <br />
-**CSv1:**
 ```
-Emsemble Mix_GCN: 45.71%
+**CSv1:** Emsemble Mix_GCN: 45.71%
+**CSv2:** Emsemble Mix_GCN: 
 ```
 ## Ensemble Ske_former
 ...
