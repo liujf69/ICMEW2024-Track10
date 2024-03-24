@@ -34,6 +34,7 @@ Copy the **Process_data/save_2d_pose** folder and the **Process_data/save_3d_pos
 cp -r ./Process_data/save_2d_pose Model_inference/Mix_GCN/dataset
 cp -r ./Process_data/save_3d_pose Model_inference/Mix_GCN/dataset
 cd ./Model_inference/Mix_GCN
+pip install -e torchlight
 ```
 
 **1. Run the following code separately to obtain classification scores using different model weights.** <br />
