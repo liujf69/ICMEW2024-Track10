@@ -29,17 +29,13 @@ After running this code, we will generate two files named **V1.npz** and **V2.np
 
 # Model inference
 ## Run Mix_GCN
-Copy the **Process_data/save_2d_pose** folder to **Model_inference/Mix_GCN/dataset**:
+Copy the **Process_data/save_2d_pose** folder and the **Process_data/save_3d_pose** folder to **Model_inference/Mix_GCN/dataset**:
 ```
 cp -r ./Process_data/save_2d_pose Model_inference/Mix_GCN/dataset
-```
-Copy the **Process_data/save_3d_pose** folder to **Model_inference/Mix_GCN/dataset**:
-```
 cp -r ./Process_data/save_3d_pose Model_inference/Mix_GCN/dataset
-```
-```
 cd ./Model_inference/Mix_GCN
 ```
+
 **1. Run the following code separately to obtain classification scores using different model weights.** <br />
 **CSv1:**
 ```
