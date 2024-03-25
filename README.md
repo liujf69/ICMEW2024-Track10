@@ -88,7 +88,7 @@ ctrgcn_V2_BM_3d.pt:
 ...
 # Ensemble
 ## Ensemble Mix_GCN
-**1.** After running the code of model inference, we will obtain classification score files corresponding to each weight in the **output folder** named **epoch1_test_score.pkl**. <br />
+**1.** After running the code of model inference **Run Mix_GCN**, we will obtain classification score files corresponding to each weight in the **output folder** named **epoch1_test_score.pkl**. <br />
 **2.** You can obtain the final classification accuracy of CSv1 by running the following code:
 ```
 python Ensemble_MixGCN.py \
