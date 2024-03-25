@@ -84,7 +84,7 @@ ctrgcn_V2_B_3d.pt: 63.25%
 ctrgcn_V2_JM_3d.pt: 55.80%
 ctrgcn_V2_BM_3d.pt:
 ```
-## Run Ske_former
+## Run Mix_Former
 ...
 # Ensemble
 ## Ensemble Mix_GCN
@@ -122,12 +122,12 @@ Please note that when running the above code, you may need to carefully **check 
 **CSv1:** Emsemble Mix_GCN: 45.71%
 **CSv2:** Emsemble Mix_GCN: 
 ```
-## Ensemble Ske_former
+## Ensemble Mix_Former
 ...
-## Ensemble Mix_GCN and Ske_former
+## Ensemble Mix_GCN and Mix_Former
 ...
 # Suggestion
-We recommend comprehensively considering the three ensemble results **Ensemble Mix_GCN**, **Ensemble Ske_former**, and **Ensemble Mix_GCN and Ske_former**.
+We recommend comprehensively considering the three ensemble results **Ensemble Mix_GCN**, **Ensemble Mix_Former**, and **Ensemble Mix_GCN and Mix_Former**.
 # Contact
 ```
 Author List: Jinfu Liu, Baiqiao Yin, Jiaying Lin, Jiajun Wen, Yue Li, Mengyuan Liu.
