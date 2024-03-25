@@ -120,7 +120,7 @@ python Ensemble_MixGCN.py \
 Please note that when running the above code, you may need to carefully **check the paths** for each **epoch1_test_score.pkl** file and the **val_sample** to prevent errors. And the **CS_test_V1.txt** and **CS_test_V2.txt** are generated when running **python extract_2dpose.py**. <br />
 ```
 **CSv1:** Emsemble Mix_GCN: 45.71%
-**CSv2:** Emsemble Mix_GCN: 
+**CSv2:** Emsemble Mix_GCN: 73.15%
 ```
 ## Ensemble Mix_Former
 ...
