@@ -72,6 +72,11 @@ ctrgcn_V1_J_3d.pt: 35.14%
 ctrgcn_V1_B_3d.pt: 35.66%
 ctrgcn_V1_JM_3d.pt: 31.08%
 ctrgcn_V1_BM_3d.pt: 30.89%
+#
+tdgcn_V1_J.pt: 43.21%
+tdgcn_V1_B.pt: 43.33%
+tdgcn_V1_JM.pt: 
+tdgcn_V1_BM.pt: 
 ```
 **CSv2:**
 ```
@@ -83,6 +88,11 @@ ctrgcn_V2_J_3d.pt: 64.60%
 ctrgcn_V2_B_3d.pt: 63.25%
 ctrgcn_V2_JM_3d.pt: 55.80%
 ctrgcn_V2_BM_3d.pt: 53.98%
+#
+tdgcn_V2_J.pt: 69.50%
+tdgcn_V2_B.pt:
+tdgcn_V2_JM.pt: 
+tdgcn_V2_BM.pt:
 ```
 ## Run Mix_Former
 ...
