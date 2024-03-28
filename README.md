@@ -92,7 +92,7 @@ ctrgcn_V2_BM_3d.pt: 53.98%
 tdgcn_V2_J.pt: 69.50%
 tdgcn_V2_B.pt: 69.30%
 tdgcn_V2_JM.pt: 57.74%
-tdgcn_V2_BM.pt:
+tdgcn_V2_BM.pt: 55.14%
 ```
 ## Run Mix_Former
 ...
