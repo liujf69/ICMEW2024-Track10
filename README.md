@@ -101,8 +101,8 @@ tdgcn_V1_BM.pt: 35.56%
 ###
 mstgcn_V1_J.pt: 41.48%
 mstgcn_V1_B.pt: 41.57%
-mstgcn_V1_JM.pt: 
-mstgcn_V1_BM.pt:
+mstgcn_V1_JM.pt: 33.82%
+mstgcn_V1_BM.pt: 34.74%
 ```
 **CSv2:**
 ```
@@ -120,10 +120,10 @@ tdgcn_V2_B.pt: 69.30%
 tdgcn_V2_JM.pt: 57.74%
 tdgcn_V2_BM.pt: 55.14%
 ###
-mstgcn_V2_J.pt: 
-mstgcn_V2_B.pt: 
-mstgcn_V2_JM.pt: 
-mstgcn_V2_BM.pt: 
+mstgcn_V2_J.pt: 67.48%
+mstgcn_V2_B.pt: 67.30%
+mstgcn_V2_JM.pt: 54.43%
+mstgcn_V2_BM.pt: 52.13%
 ```
 ## Run Mix_Former
 ...
