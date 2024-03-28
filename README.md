@@ -49,6 +49,11 @@ python main.py --config ./config/ctrgcn_V1_J_3d.yaml --phase test --save-score T
 python main.py --config ./config/ctrgcn_V1_B_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V1_B_3d.pt --device 0
 python main.py --config ./config/ctrgcn_V1_JM_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V1_JM_3d.pt --device 0
 python main.py --config ./config/ctrgcn_V1_BM_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V1_BM_3d.pt --device 0
+###
+python main.py --config ./config/tdgcn_V1_J.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V1_J.pt --device 0
+python main.py --config ./config/tdgcn_V1_B.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V1_B.pt --device 0
+python main.py --config ./config/tdgcn_V1_JM.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V1_JM.pt --device 0
+python main.py --config ./config/tdgcn_V1_BM.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V1_BM.pt --device 0
 ```
 **CSv2:**
 ```
@@ -60,6 +65,11 @@ python main.py --config ./config/ctrgcn_V2_J_3d.yaml --phase test --save-score T
 python main.py --config ./config/ctrgcn_V2_B_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V2_B_3d.pt --device 0
 python main.py --config ./config/ctrgcn_V2_JM_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V2_JM_3d.pt --device 0
 python main.py --config ./config/ctrgcn_V2_BM_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V2_BM_3d.pt --device 0
+###
+python main.py --config ./config/tdgcn_V2_J.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V2_J.pt --device 0
+python main.py --config ./config/tdgcn_V2_B.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V2_B.pt --device 0
+python main.py --config ./config/tdgcn_V2_JM.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V2_JM.pt --device 0
+python main.py --config ./config/tdgcn_V2_BM.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V2_BM.pt --device 0
 ```
 **2. Verification report of the UAV dataset** <br />
 **CSv1:**
