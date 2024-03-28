@@ -98,12 +98,12 @@ tdgcn_V1_J.pt: 43.21%
 tdgcn_V1_B.pt: 43.33%
 tdgcn_V1_JM.pt: 35.74%
 tdgcn_V1_BM.pt: 35.56%
-```
 ###
 mstgcn_V1_J.pt: 41.48%
 mstgcn_V1_B.pt: 
 mstgcn_V1_JM.pt: 
-mstgcn_V1_BM.pt: 
+mstgcn_V1_BM.pt:
+```
 **CSv2:**
 ```
 ctrgcn_V2_J.pt: 69.00%
