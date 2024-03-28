@@ -185,6 +185,8 @@ Please note that when running the above code, you may need to carefully **check 
 ...
 # Suggestion
 We recommend comprehensively considering the three ensemble results **Ensemble Mix_GCN**, **Ensemble Mix_Former**, and **Ensemble Mix_GCN and Mix_Former**.
+# Thanks
+Our work is based on the [CTR-GCN](https://github.com/Uason-Chen/CTR-GCN), [TD-GCN][https://github.com/liujf69/TD-GCN-Gesture], [MotionBERT](https://github.com/Walter0807/MotionBERT)
 # Contact
 ```
 Author List: Jinfu Liu, Baiqiao Yin, Jiaying Lin, Jiajun Wen, Yue Li, Mengyuan Liu.
