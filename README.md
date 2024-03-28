@@ -54,6 +54,11 @@ python main.py --config ./config/tdgcn_V1_J.yaml --phase test --save-score True 
 python main.py --config ./config/tdgcn_V1_B.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V1_B.pt --device 0
 python main.py --config ./config/tdgcn_V1_JM.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V1_JM.pt --device 0
 python main.py --config ./config/tdgcn_V1_BM.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V1_BM.pt --device 0
+###
+python main.py --config ./config/mstgcn_V1_J.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V1_J.pt --device 0
+python main.py --config ./config/mstgcn_V1_B.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V1_B.pt --device 0
+python main.py --config ./config/mstgcn_V1_JM.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V1_JM.pt --device 0
+python main.py --config ./config/mstgcn_V1_BM.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V1_BM.pt --device 0
 ```
 **CSv2:**
 ```
@@ -70,6 +75,11 @@ python main.py --config ./config/tdgcn_V2_J.yaml --phase test --save-score True 
 python main.py --config ./config/tdgcn_V2_B.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V2_B.pt --device 0
 python main.py --config ./config/tdgcn_V2_JM.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V2_JM.pt --device 0
 python main.py --config ./config/tdgcn_V2_BM.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V2_BM.pt --device 0
+###
+python main.py --config ./config/mstgcn_V2_J.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V2_J.pt --device 0
+python main.py --config ./config/mstgcn_V2_B.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V2_B.pt --device 0
+python main.py --config ./config/mstgcn_V2_JM.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V2_JM.pt --device 0
+python main.py --config ./config/mstgcn_V2_BM.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V2_BM.pt --device 0
 ```
 **2. Verification report of the UAV dataset** <br />
 To verify the correctness of your handling of the dataset, you can use the validation set from the original UAV-Human dataset to test the checkpoints above, and we provide the corresponding recognition accuracy below. <br />
@@ -89,6 +99,11 @@ tdgcn_V1_B.pt: 43.33%
 tdgcn_V1_JM.pt: 35.74%
 tdgcn_V1_BM.pt: 35.56%
 ```
+###
+mstgcn_V1_J.pt: 41.48%
+mstgcn_V1_B.pt: 
+mstgcn_V1_JM.pt: 
+mstgcn_V1_BM.pt: 
 **CSv2:**
 ```
 ctrgcn_V2_J.pt: 69.00%
@@ -104,6 +119,11 @@ tdgcn_V2_J.pt: 69.50%
 tdgcn_V2_B.pt: 69.30%
 tdgcn_V2_JM.pt: 57.74%
 tdgcn_V2_BM.pt: 55.14%
+###
+mstgcn_V2_J.pt: 
+mstgcn_V2_B.pt: 
+mstgcn_V2_JM.pt: 
+mstgcn_V2_BM.pt: 
 ```
 ## Run Mix_Former
 ...
