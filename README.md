@@ -110,6 +110,10 @@ python Ensemble_MixGCN.py \
 --ctrgcn_B3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_B_3D/epoch1_test_score.pkl \
 --ctrgcn_JM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_JM_3D/epoch1_test_score.pkl \
 --ctrgcn_BM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_BM_3D/epoch1_test_score.pkl \
+--tdgcn_J2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V1_J/epoch1_test_score.pkl \
+--tdgcn_B2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V1_B/epoch1_test_score.pkl \
+--tdgcn_JM2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V1_JM/epoch1_test_score.pkl \
+--tdgcn_BM2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V1_BM/epoch1_test_score.pkl \
 --val_sample ./Process_data/CS_test_V1.txt \
 --benchmark V1
 ```
@@ -124,13 +128,17 @@ python Ensemble_MixGCN.py \
 --ctrgcn_B3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_B_3D/epoch1_test_score.pkl \
 --ctrgcn_JM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_JM_3D/epoch1_test_score.pkl \
 --ctrgcn_BM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_BM_3D/epoch1_test_score.pkl \
+--tdgcn_J2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V2_J/epoch1_test_score.pkl \
+--tdgcn_B2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V2_B/epoch1_test_score.pkl \
+--tdgcn_JM2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V2_JM/epoch1_test_score.pkl \
+--tdgcn_BM2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V2_BM/epoch1_test_score.pkl \
 --val_sample ./Process_data/CS_test_V2.txt \
 --benchmark V2
 ```
 Please note that when running the above code, you may need to carefully **check the paths** for each **epoch1_test_score.pkl** file and the **val_sample** to prevent errors. And the **CS_test_V1.txt** and **CS_test_V2.txt** are generated when running **python extract_2dpose.py**. <br />
 ```
-**CSv1:** Emsemble Mix_GCN: 45.71%
-**CSv2:** Emsemble Mix_GCN: 73.15%
+**CSv1:** Emsemble Mix_GCN: 46.33%
+**CSv2:** Emsemble Mix_GCN: 74.06%
 ```
 ## Ensemble Mix_Former
 ...
