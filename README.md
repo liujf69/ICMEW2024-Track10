@@ -169,7 +169,7 @@ python Ensemble_MixGCN.py \
 Please note that when running the above code, you may need to carefully **check the paths** for each **epoch1_test_score.pkl** file and the **val_sample** to prevent errors. <br />
 ```
 **CSv1:** Emsemble Mix_GCN: 45.71%
-**CSv2:** Emsemble Mix_GCN: 
+**CSv2:** Emsemble Mix_GCN: 71.13%
 ```
 ## Ensemble Mix_Former
 **1.** After running the code of model inference, we will obtain classification score files corresponding to each weight in the **output folder** named **epoch1_test_score.pkl**. <br />
@@ -200,8 +200,6 @@ python Ensemble_MixFormer.py \
 ```
 Please note that when running the above code, you may need to carefully **check the paths** for each **epoch1_test_score.pkl** file and the **val_sample** to prevent errors. <br />
 ```
-**CSv1:** Emsemble Mix_GCN: 45.71%
-**CSv2:** Emsemble Mix_GCN: 71.13%
 **CSv1:** Emsemble MixFormer: 48.73%
 **CSv2:** Emsemble MixFormer: 74.22%
 ```
