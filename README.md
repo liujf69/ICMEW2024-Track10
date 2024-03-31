@@ -82,7 +82,7 @@ ctrgcn_V2_BM.pt: 58.45%
 ctrgcn_V2_J_3d.pt: 64.60%
 ctrgcn_V2_B_3d.pt: 63.25%
 ctrgcn_V2_JM_3d.pt: 55.80%
-ctrgcn_V2_BM_3d.pt: 55.01%
+ctrgcn_V2_BM_3d.pt: 54.67%
 ```
 ## Run Mix_Former
 Copy the **Process_data/save_2d_pose**  folder to **Model_inference/Mix_Former/dataset**:
@@ -130,7 +130,7 @@ mixformer_V2_B.pt: 64.89%
 mixformer_V2_JM.pt: 54.58%
 mixformer_V2_BM.pt: 52.95%
 mixformer_V2_k2.pt: 65.56%
-mixformer_V2_k2M.pt:  4
+mixformer_V2_k2M.pt: 55.01%
 
 ```
 
