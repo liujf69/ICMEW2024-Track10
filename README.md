@@ -1,7 +1,7 @@
 # ICMEW2024-Track10
 ICMEW2024-Track #10: Skeleton-based Action Recognition. <br />
 ![image](https://github.com/liujf69/ICMEW2024-Track10/blob/main/framework.png)
-Please install the environment based on **mix_GCN.yml**, **pose3d.yml**, **mix_former.yml**. <br />
+Please install the environment based on **mix_GCN.yml**. <br />
 # Dataset
 **1. Put your test dataset into the ```Test_dataset``` folder.**
 ```
@@ -49,16 +49,6 @@ python main.py --config ./config/ctrgcn_V1_J_3d.yaml --phase test --save-score T
 python main.py --config ./config/ctrgcn_V1_B_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V1_B_3d.pt --device 0
 python main.py --config ./config/ctrgcn_V1_JM_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V1_JM_3d.pt --device 0
 python main.py --config ./config/ctrgcn_V1_BM_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V1_BM_3d.pt --device 0
-###
-python main.py --config ./config/tdgcn_V1_J.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V1_J.pt --device 0
-python main.py --config ./config/tdgcn_V1_B.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V1_B.pt --device 0
-python main.py --config ./config/tdgcn_V1_JM.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V1_JM.pt --device 0
-python main.py --config ./config/tdgcn_V1_BM.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V1_BM.pt --device 0
-###
-python main.py --config ./config/mstgcn_V1_J.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V1_J.pt --device 0
-python main.py --config ./config/mstgcn_V1_B.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V1_B.pt --device 0
-python main.py --config ./config/mstgcn_V1_JM.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V1_JM.pt --device 0
-python main.py --config ./config/mstgcn_V1_BM.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V1_BM.pt --device 0
 ```
 **CSv2:**
 ```
@@ -70,19 +60,8 @@ python main.py --config ./config/ctrgcn_V2_J_3d.yaml --phase test --save-score T
 python main.py --config ./config/ctrgcn_V2_B_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V2_B_3d.pt --device 0
 python main.py --config ./config/ctrgcn_V2_JM_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V2_JM_3d.pt --device 0
 python main.py --config ./config/ctrgcn_V2_BM_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V2_BM_3d.pt --device 0
-###
-python main.py --config ./config/tdgcn_V2_J.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V2_J.pt --device 0
-python main.py --config ./config/tdgcn_V2_B.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V2_B.pt --device 0
-python main.py --config ./config/tdgcn_V2_JM.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V2_JM.pt --device 0
-python main.py --config ./config/tdgcn_V2_BM.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V2_BM.pt --device 0
-###
-python main.py --config ./config/mstgcn_V2_J.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V2_J.pt --device 0
-python main.py --config ./config/mstgcn_V2_B.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V2_B.pt --device 0
-python main.py --config ./config/mstgcn_V2_JM.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V2_JM.pt --device 0
-python main.py --config ./config/mstgcn_V2_BM.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V2_BM.pt --device 0
 ```
 **2. Verification report of the UAV dataset** <br />
-To verify the correctness of your handling of the dataset, you can use the validation set from the original UAV-Human dataset to test the checkpoints above, and we provide the corresponding recognition accuracy below. <br />
 **CSv1:**
 ```
 ctrgcn_V1_J.pt: 43.52%
@@ -93,16 +72,6 @@ ctrgcn_V1_J_3d.pt: 35.14%
 ctrgcn_V1_B_3d.pt: 35.66%
 ctrgcn_V1_JM_3d.pt: 31.08%
 ctrgcn_V1_BM_3d.pt: 30.89%
-###
-tdgcn_V1_J.pt: 43.21%
-tdgcn_V1_B.pt: 43.33%
-tdgcn_V1_JM.pt: 35.74%
-tdgcn_V1_BM.pt: 35.56%
-###
-mstgcn_V1_J.pt: 41.48%
-mstgcn_V1_B.pt: 41.57%
-mstgcn_V1_JM.pt: 33.82%
-mstgcn_V1_BM.pt: 34.74%
 ```
 **CSv2:**
 ```
@@ -113,23 +82,62 @@ ctrgcn_V2_BM.pt: 58.45%
 ctrgcn_V2_J_3d.pt: 64.60%
 ctrgcn_V2_B_3d.pt: 63.25%
 ctrgcn_V2_JM_3d.pt: 55.80%
-ctrgcn_V2_BM_3d.pt: 53.98%
-###
-tdgcn_V2_J.pt: 69.50%
-tdgcn_V2_B.pt: 69.30%
-tdgcn_V2_JM.pt: 57.74%
-tdgcn_V2_BM.pt: 55.14%
-###
-mstgcn_V2_J.pt: 67.48%
-mstgcn_V2_B.pt: 67.30%
-mstgcn_V2_JM.pt: 54.43%
-mstgcn_V2_BM.pt: 52.13%
+ctrgcn_V2_BM_3d.pt:
 ```
 ## Run Mix_Former
+Copy the **Process_data/save_2d_pose**  folder to **Model_inference/Mix_Former/dataset**:
+```
+cd ./Model_inference/Mix_Former
+
+```
+**1. Run the following code separately to obtain classification scores using different model weights.** <br />
+**CSv1:**
+```
+python main.py --config ./config/mixformer_V1_J.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_J.pt --device 0  --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V1.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V1.npz
+python main.py --config ./config/mixformer_V1_B.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_B.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V1.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V1.npz
+python main.py --config ./config/mixformer_V1_JM.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_JM.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V1.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V1.npz
+python main.py --config ./config/mixformer_V1_BM.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_BM.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V1.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V1.npz
+python main.py --config ./config/mixformer_V1_k2.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_k2.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V1.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V1.npz
+python main.py --config ./config/mixformer_V1_k2M.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_k2M.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V1.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V1.npz
+
+```
+**CSv2:**
+```
+python main.py --config ./config/mixformer_V2_J.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_J.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V2.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V2.npz
+python main.py --config ./config/mixformer_V2_B.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_B.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V2.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V2.npz
+python main.py --config ./config/mixformer_V2_JM.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_JM.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V2.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V2.npz
+python main.py --config ./config/mixformer_V2_BM.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_BM.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V2.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V2.npz
+python main.py --config ./config/mixformer_V2_k2.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_k2.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V2.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V2.npz
+python main.py --config ./config/mixformer_K2M.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_k2M.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V2.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V2.npz
+
+```
+
+**2. Verification report of the UAV dataset** <br />
+**CSv1:**
+```
+mixformer_V1_J.pt: 41.43%
+mixformer_V1_B.pt: 37.40%
+mixformer_V1_JM.pt: 33.41%
+mixformer_V1_BM.pt: 30.24%
+mixformer_V1_k2.pt: 39.21%
+mixformer_V1_k2M.pt: 32.60%
+
+```
+**CSv2:**
+```
+mixformer_V2_J.pt: 66.03%
+mixformer_V2_B.pt: 64.89%
+mixformer_V2_JM.pt: 54.58%
+mixformer_V2_BM.pt: 52.95%
+mixformer_V2_k2.pt: 65.56%
+mixformer_V2_k2M.pt:  4
+
+```
+
 ...
 # Ensemble
 ## Ensemble Mix_GCN
-**1.** After running the code of model inference (i.e. **Run Mix_GCN**), we will obtain classification score files corresponding to each weight in the **output folder** named **epoch1_test_score.pkl**. <br />
+**1.** After running the code of model inference, we will obtain classification score files corresponding to each weight in the **output folder** named **epoch1_test_score.pkl**. <br />
 **2.** You can obtain the final classification accuracy of CSv1 by running the following code:
 ```
 python Ensemble_MixGCN.py \
@@ -141,14 +149,6 @@ python Ensemble_MixGCN.py \
 --ctrgcn_B3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_B_3D/epoch1_test_score.pkl \
 --ctrgcn_JM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_JM_3D/epoch1_test_score.pkl \
 --ctrgcn_BM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_BM_3D/epoch1_test_score.pkl \
---tdgcn_J2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V1_J/epoch1_test_score.pkl \
---tdgcn_B2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V1_B/epoch1_test_score.pkl \
---tdgcn_JM2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V1_JM/epoch1_test_score.pkl \
---tdgcn_BM2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V1_BM/epoch1_test_score.pkl \
---mstgcn_J2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V1_J/epoch1_test_score.pkl \
---mstgcn_B2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V1_B/epoch1_test_score.pkl \
---mstgcn_JM2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V1_JM/epoch1_test_score.pkl \
---mstgcn_BM2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V1_BM/epoch1_test_score.pkl \
 --val_sample ./Process_data/CS_test_V1.txt \
 --benchmark V1
 ```
@@ -163,30 +163,97 @@ python Ensemble_MixGCN.py \
 --ctrgcn_B3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_B_3D/epoch1_test_score.pkl \
 --ctrgcn_JM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_JM_3D/epoch1_test_score.pkl \
 --ctrgcn_BM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_BM_3D/epoch1_test_score.pkl \
---tdgcn_J2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V2_J/epoch1_test_score.pkl \
---tdgcn_B2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V2_B/epoch1_test_score.pkl \
---tdgcn_JM2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V2_JM/epoch1_test_score.pkl \
---tdgcn_BM2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V2_BM/epoch1_test_score.pkl \
---mstgcn_J2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V2_J/epoch1_test_score.pkl \
---mstgcn_B2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V2_B/epoch1_test_score.pkl \
---mstgcn_JM2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V2_JM/epoch1_test_score.pkl \
---mstgcn_BM2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V2_BM/epoch1_test_score.pkl \
 --val_sample ./Process_data/CS_test_V2.txt \
 --benchmark V2
 ```
-Please note that when running the above code, you may need to carefully **check the paths** for each **epoch1_test_score.pkl** file and the **val_sample** to prevent errors. And the **CS_test_V1.txt** and **CS_test_V2.txt** are generated when running **python extract_2dpose.py**. <br />
+Please note that when running the above code, you may need to carefully **check the paths** for each **epoch1_test_score.pkl** file and the **val_sample** to prevent errors. <br />
 ```
-**CSv1:** Emsemble Mix_GCN: 46.73%
-**CSv2:** Emsemble Mix_GCN: 74.06%
+**CSv1:** Emsemble Mix_GCN: 45.71%
+**CSv2:** Emsemble Mix_GCN: 
 ```
 ## Ensemble Mix_Former
-...
+**1.** After running the code of model inference, we will obtain classification score files corresponding to each weight in the **output folder** named **epoch1_test_score.pkl**. <br />
+**2.** You can obtain the final classification accuracy of CSv1 by running the following code:
+```
+python Ensemble_MixFormer.py \
+--mixformer_J_Score ./Model_inference/Mix_Former/output/skmixf__V1_J/epoch1_test_score.pkl \
+--mixformer_B_Score ./Model_inference/Mix_Former/output/skmixf__V1_B/epoch1_test_score.pkl \
+--mixformer_JM_Score ./Model_inference/Mix_Former/output/skmixf__V1_JM/epoch1_test_score.pkl \
+--mixformer_BM_Score ./Model_inference/Mix_Former/output/skmixf__V1_BM/epoch1_test_score.pkl \
+--mixformer_k2_Score ./Model_inference/Mix_Former/output/skmixf__V1_k2/epoch1_test_score.pkl \
+--mixformer_k2M_Score ./Model_inference/Mix_Former/output/skmixf__V1_k2M/epoch1_test_score.pkl \
+--val_sample ./Process_data/CS_test_V1.txt \
+--benchmark V1
+```
+
+**3.** You can obtain the final classification accuracy of CSv2 by running the following code:
+```
+python Ensemble_MixFormer.py \
+--mixformer_J_Score ./Model_inference/Mix_Former/output/skmixf__V2_J/epoch1_test_score.pkl \
+--mixformer_B_Score ./Model_inference/Mix_Former/output/skmixf__V2_B/epoch1_test_score.pkl \
+--mixformer_JM_Score ./Model_inference/Mix_Former/output/skmixf__V2_JM/epoch1_test_score.pkl \
+--mixformer_BM_Score ./Model_inference/Mix_Former/output/skmixf__V2_BM/epoch1_test_score.pkl \
+--mixformer_k2_Score ./Model_inference/Mix_Former/output/skmixf__V2_k2/epoch1_test_score.pkl \
+--mixformer_k2M_Score ./Model_inference/Mix_Former/output/skmixf__V2_k2M/epoch1_test_score.pkl \
+--val_sample ./Process_data/CS_test_V2.txt \
+--benchmark V2
+```
+Please note that when running the above code, you may need to carefully **check the paths** for each **epoch1_test_score.pkl** file and the **val_sample** to prevent errors. <br />
+```
+**CSv1:** Emsemble Mix_GCN: 45.71%
+**CSv2:** Emsemble Mix_GCN: 71.13%
+**CSv1:** Emsemble MixFormer: 48.73%
+**CSv2:** Emsemble MixFormer: 74.22%
+```
 ## Ensemble Mix_GCN and Mix_Former
-...
+
+**1.** You can obtain the final classification accuracy of CSv1 by running the following code:
+```
+python Ensemble.py \
+--mixformer_J_Score ./Model_inference/Mix_Former/output/skmixf__V1_J/epoch1_test_score.pkl \
+--mixformer_B_Score ./Model_inference/Mix_Former/output/skmixf__V1_B/epoch1_test_score.pkl \
+--mixformer_JM_Score ./Model_inference/Mix_Former/output/skmixf__V1_JM/epoch1_test_score.pkl \
+--mixformer_BM_Score ./Model_inference/Mix_Former/output/skmixf__V1_BM/epoch1_test_score.pkl \
+--mixformer_k2_Score ./Model_inference/Mix_Former/output/skmixf__V1_k2/epoch1_test_score.pkl \
+--ctrgcn_J2d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_J/epoch1_test_score.pkl \
+--ctrgcn_B2d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_B/epoch1_test_score.pkl \
+--ctrgcn_JM2d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_JM/epoch1_test_score.pkl \
+--ctrgcn_BM2d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_BM/epoch1_test_score.pkl \
+--ctrgcn_J3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_J_3D/epoch1_test_score.pkl \
+--ctrgcn_B3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_B_3D/epoch1_test_score.pkl \
+--ctrgcn_JM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_JM_3D/epoch1_test_score.pkl \
+--ctrgcn_BM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_BM_3D/epoch1_test_score.pkl \
+--val_sample ./Process_data/CS_test_V1.txt \
+--benchmark V1
+```
+--mixformer_k2M_Score ./Model_inference/Mix_Former/output/skmixf__V1_k2M/epoch1_test_score.pkl \
+**2.** You can obtain the final classification accuracy of CSv2 by running the following code:
+```
+python Ensemble.py \
+--mixformer_J_Score ./Model_inference/Mix_Former/output/skmixf__V2_J/epoch1_test_score.pkl \
+--mixformer_B_Score ./Model_inference/Mix_Former/output/skmixf__V2_B/epoch1_test_score.pkl \
+--mixformer_JM_Score ./Model_inference/Mix_Former/output/skmixf__V2_JM/epoch1_test_score.pkl \
+--mixformer_BM_Score ./Model_inference/Mix_Former/output/skmixf__V2_BM/epoch1_test_score.pkl \
+--mixformer_k2_Score ./Model_inference/Mix_Former/output/skmixf__V2_k2/epoch1_test_score.pkl \
+--mixformer_k2M_Score ./Model_inference/Mix_Former/output/skmixf__V2_k2M/epoch1_test_score.pkl \
+--ctrgcn_J2d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_J/epoch1_test_score.pkl \
+--ctrgcn_B2d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_B/epoch1_test_score.pkl \
+--ctrgcn_JM2d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_JM/epoch1_test_score.pkl \
+--ctrgcn_BM2d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_BM/epoch1_test_score.pkl \
+--ctrgcn_J3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_J_3D/epoch1_test_score.pkl \
+--ctrgcn_B3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_B_3D/epoch1_test_score.pkl \
+--ctrgcn_JM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_JM_3D/epoch1_test_score.pkl \
+--ctrgcn_BM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_BM_3D/epoch1_test_score.pkl \
+--val_sample ./Process_data/CS_test_V2.txt \
+--benchmark V2
+```
+
+```
+**CSv1:** Emsemble: 48.94%
+**CSv2:** Emsemble: 74.49%
+```
 # Suggestion
 We recommend comprehensively considering the three ensemble results **Ensemble Mix_GCN**, **Ensemble Mix_Former**, and **Ensemble Mix_GCN and Mix_Former**.
-# Thanks
-Our work is based on the [CTR-GCN](https://github.com/Uason-Chen/CTR-GCN), [TD-GCN](https://github.com/liujf69/TD-GCN-Gesture), [MotionBERT](https://github.com/Walter0807/MotionBERT)
 # Contact
 ```
 Author List: Jinfu Liu, Baiqiao Yin, Jiaying Lin, Jiajun Wen, Yue Li, Mengyuan Liu.
