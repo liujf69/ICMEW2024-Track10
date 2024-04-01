@@ -49,6 +49,16 @@ python main.py --config ./config/ctrgcn_V1_J_3d.yaml --phase test --save-score T
 python main.py --config ./config/ctrgcn_V1_B_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V1_B_3d.pt --device 0
 python main.py --config ./config/ctrgcn_V1_JM_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V1_JM_3d.pt --device 0
 python main.py --config ./config/ctrgcn_V1_BM_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V1_BM_3d.pt --device 0
+###
+python main.py --config ./config/tdgcn_V1_J.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V1_J.pt --device 0
+python main.py --config ./config/tdgcn_V1_B.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V1_B.pt --device 0
+python main.py --config ./config/tdgcn_V1_JM.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V1_JM.pt --device 0
+python main.py --config ./config/tdgcn_V1_BM.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V1_BM.pt --device 0
+###
+python main.py --config ./config/mstgcn_V1_J.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V1_J.pt --device 0
+python main.py --config ./config/mstgcn_V1_B.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V1_B.pt --device 0
+python main.py --config ./config/mstgcn_V1_JM.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V1_JM.pt --device 0
+python main.py --config ./config/mstgcn_V1_BM.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V1_BM.pt --device 0
 ```
 **CSv2:**
 ```
@@ -60,6 +70,16 @@ python main.py --config ./config/ctrgcn_V2_J_3d.yaml --phase test --save-score T
 python main.py --config ./config/ctrgcn_V2_B_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V2_B_3d.pt --device 0
 python main.py --config ./config/ctrgcn_V2_JM_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V2_JM_3d.pt --device 0
 python main.py --config ./config/ctrgcn_V2_BM_3d.yaml --phase test --save-score True --weights ./checkpoints/ctrgcn_V2_BM_3d.pt --device 0
+###
+python main.py --config ./config/tdgcn_V2_J.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V2_J.pt --device 0
+python main.py --config ./config/tdgcn_V2_B.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V2_B.pt --device 0
+python main.py --config ./config/tdgcn_V2_JM.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V2_JM.pt --device 0
+python main.py --config ./config/tdgcn_V2_BM.yaml --phase test --save-score True --weights ./checkpoints/tdgcn_V2_BM.pt --device 0
+###
+python main.py --config ./config/mstgcn_V2_J.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V2_J.pt --device 0
+python main.py --config ./config/mstgcn_V2_B.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V2_B.pt --device 0
+python main.py --config ./config/mstgcn_V2_JM.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V2_JM.pt --device 0
+python main.py --config ./config/mstgcn_V2_BM.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V2_BM.pt --device 0
 ```
 **2. Verification report of the UAV dataset** <br />
 **CSv1:**
@@ -72,6 +92,16 @@ ctrgcn_V1_J_3d.pt: 35.14%
 ctrgcn_V1_B_3d.pt: 35.66%
 ctrgcn_V1_JM_3d.pt: 31.08%
 ctrgcn_V1_BM_3d.pt: 30.89%
+###
+tdgcn_V1_J.pt: 43.21%
+tdgcn_V1_B.pt: 43.33%
+tdgcn_V1_JM.pt: 35.74%
+tdgcn_V1_BM.pt: 35.56%
+###
+mstgcn_V1_J.pt: 41.48%
+mstgcn_V1_B.pt: 41.57%
+mstgcn_V1_JM.pt: 33.82%
+mstgcn_V1_BM.pt: 34.74%
 ```
 **CSv2:**
 ```
@@ -83,12 +113,21 @@ ctrgcn_V2_J_3d.pt: 64.60%
 ctrgcn_V2_B_3d.pt: 63.25%
 ctrgcn_V2_JM_3d.pt: 55.80%
 ctrgcn_V2_BM_3d.pt: 54.67%
+###
+tdgcn_V2_J.pt: 69.50%
+tdgcn_V2_B.pt: 69.30%
+tdgcn_V2_JM.pt: 57.74%
+tdgcn_V2_BM.pt: 55.14%
+###
+mstgcn_V2_J.pt: 67.48%
+mstgcn_V2_B.pt: 67.30%
+mstgcn_V2_JM.pt: 54.43%
+mstgcn_V2_BM.pt: 52.13%
 ```
 ## Run Mix_Former
 Copy the **Process_data/save_2d_pose**  folder to **Model_inference/Mix_Former/dataset**:
 ```
 cd ./Model_inference/Mix_Former
-
 ```
 **1. Run the following code separately to obtain classification scores using different model weights.** <br />
 **CSv1:**
