@@ -99,7 +99,6 @@ python main.py --config ./config/mixformer_V1_JM.yaml --phase test --save-score 
 python main.py --config ./config/mixformer_V1_BM.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_BM.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V1.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V1.npz
 python main.py --config ./config/mixformer_V1_k2.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_k2.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V1.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V1.npz
 python main.py --config ./config/mixformer_V1_k2M.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_k2M.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V1.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V1.npz
-
 ```
 **CSv2:**
 ```
@@ -109,7 +108,6 @@ python main.py --config ./config/mixformer_V2_JM.yaml --phase test --save-score 
 python main.py --config ./config/mixformer_V2_BM.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_BM.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V2.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V2.npz
 python main.py --config ./config/mixformer_V2_k2.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_k2.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V2.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V2.npz
 python main.py --config ./config/mixformer_K2M.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_k2M.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V2.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V2.npz
-
 ```
 
 **2. Verification report of the UAV dataset** <br />
@@ -121,7 +119,6 @@ mixformer_V1_JM.pt: 33.41%
 mixformer_V1_BM.pt: 30.24%
 mixformer_V1_k2.pt: 39.21%
 mixformer_V1_k2M.pt: 32.60%
-
 ```
 **CSv2:**
 ```
@@ -131,10 +128,8 @@ mixformer_V2_JM.pt: 54.58%
 mixformer_V2_BM.pt: 52.95%
 mixformer_V2_k2.pt: 65.56%
 mixformer_V2_k2M.pt: 55.01%
-
 ```
 
-...
 # Ensemble
 ## Ensemble Mix_GCN
 **1.** After running the code of model inference, we will obtain classification score files corresponding to each weight in the **output folder** named **epoch1_test_score.pkl**. <br />
