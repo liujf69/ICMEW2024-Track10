@@ -131,7 +131,7 @@ cd ./Model_inference/Mix_Former
 ```
 **1. Run the following code separately to obtain classification scores using different model weights.** <br />
 **CSv1:** <br />
-You have to change the corresponding **data-path** in the **config file**, just like：**data_path: ./Mix_Former/dataset/save_2d_pose/V1.npz**
+You have to change the corresponding **data-path** in the **config file**, just like：**data_path: dataset/save_2d_pose/V1.npz**. we recommend using an absolute path.
 ```
 python main.py --config ./config/mixformer_V1_J.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_J.pt --device 0  
 python main.py --config ./config/mixformer_V1_B.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_B.pt --device 0 
@@ -141,7 +141,7 @@ python main.py --config ./config/mixformer_V1_k2.yaml --phase test --save-score 
 python main.py --config ./config/mixformer_V1_k2M.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_k2M.pt --device 0 
 ```
 **CSv2:** <br />
-You have to change the corresponding **data-path** in the **config file**, just like：**data_path: ./Mix_Former/dataset/save_2d_pose/V2.npz**
+You have to change the corresponding **data-path** in the **config file**, just like：**data_path: dataset/save_2d_pose/V2.npz**. we recommend using an absolute path.
 ```
 python main.py --config ./config/mixformer_V2_J.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_J.pt --device 0 
 python main.py --config ./config/mixformer_V2_B.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_B.pt --device 0 
