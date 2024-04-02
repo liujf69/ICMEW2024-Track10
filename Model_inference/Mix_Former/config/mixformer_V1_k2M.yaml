@@ -37,7 +37,7 @@ step:
 - 50
 test_batch_size: 128
 test_feeder_args:
-  bone: true
+  bone: false
   data_path: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V1.npz
   debug: false
   p_interval:
@@ -46,7 +46,7 @@ test_feeder_args:
   vel: true
   window_size: 64
 train_feeder_args:
-  bone: true
+  bone: false
   data_path: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V1.npz
   debug: false
   normalization: false
