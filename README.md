@@ -149,7 +149,7 @@ python main.py --config ./config/mixformer_V2_B.yaml --phase test --save-score T
 python main.py --config ./config/mixformer_V2_JM.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_JM.pt --device 0 
 python main.py --config ./config/mixformer_V2_BM.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_BM.pt --device 0 
 python main.py --config ./config/mixformer_V2_k2.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_k2.pt --device 0 
-python main.py --config ./config/mixformer_V2_K2M.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_k2M.pt --device 0 
+python main.py --config ./config/mixformer_V2_k2M.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_k2M.pt --device 0 
 ```
 
 **2. Verification report of the UAV dataset** <br />
