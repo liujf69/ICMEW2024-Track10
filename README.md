@@ -82,6 +82,7 @@ python main.py --config ./config/mstgcn_V2_JM.yaml --phase test --save-score Tru
 python main.py --config ./config/mstgcn_V2_BM.yaml --phase test --save-score True --weights ./checkpoints/mstgcn_V2_BM.pt --device 0
 ```
 **2. Verification report of the UAV dataset** <br />
+To verify the correctness of your handling of the dataset, you can use the validation set from the original UAV-Human dataset to test the checkpoints above, and we provide the corresponding recognition accuracy below.
 **CSv1:**
 ```
 ctrgcn_V1_J.pt: 43.52%
