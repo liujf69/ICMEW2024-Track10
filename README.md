@@ -131,22 +131,24 @@ cd ./Model_inference/Mix_Former
 ```
 **1. Run the following code separately to obtain classification scores using different model weights.** <br />
 **CSv1:**
+You have to change the corresponding **data-path** in the **config file**, just like：**data_path: ./Mix_Former/dataset/save_2d_pose/V1.npz**
 ```
-python main.py --config ./config/mixformer_V1_J.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_J.pt --device 0  --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V1.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V1.npz
-python main.py --config ./config/mixformer_V1_B.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_B.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V1.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V1.npz
-python main.py --config ./config/mixformer_V1_JM.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_JM.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V1.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V1.npz
-python main.py --config ./config/mixformer_V1_BM.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_BM.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V1.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V1.npz
-python main.py --config ./config/mixformer_V1_k2.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_k2.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V1.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V1.npz
-python main.py --config ./config/mixformer_V1_k2M.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_k2M.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V1.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V1.npz
+python main.py --config ./config/mixformer_V1_J.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_J.pt --device 0  
+python main.py --config ./config/mixformer_V1_B.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_B.pt --device 0 
+python main.py --config ./config/mixformer_V1_JM.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_JM.pt --device 0 
+python main.py --config ./config/mixformer_V1_BM.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_BM.pt --device 0 
+python main.py --config ./config/mixformer_V1_k2.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_k2.pt --device 0 
+python main.py --config ./config/mixformer_V1_k2M.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V1_k2M.pt --device 0 
 ```
 **CSv2:**
+You have to change the corresponding **data-path** in the **config file**, just like：**data_path: ./Mix_Former/dataset/save_2d_pose/V2.npz**
 ```
-python main.py --config ./config/mixformer_V2_J.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_J.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V2.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V2.npz
-python main.py --config ./config/mixformer_V2_B.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_B.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V2.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V2.npz
-python main.py --config ./config/mixformer_V2_JM.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_JM.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V2.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V2.npz
-python main.py --config ./config/mixformer_V2_BM.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_BM.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V2.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V2.npz
-python main.py --config ./config/mixformer_V2_k2.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_k2.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V2.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V2.npz
-python main.py --config ./config/mixformer_K2M.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_k2M.pt --device 0 --data_path {your path to ./Mix_GCN/dataset/save_2d_pose/V2.npz} like: /data/yinbaiqiao/ICMEW2024-Track10-main/Model_inference/Mix_GCN/dataset/save_2d_pose/V2.npz
+python main.py --config ./config/mixformer_V2_J.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_J.pt --device 0 
+python main.py --config ./config/mixformer_V2_B.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_B.pt --device 0 
+python main.py --config ./config/mixformer_V2_JM.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_JM.pt --device 0 
+python main.py --config ./config/mixformer_V2_BM.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_BM.pt --device 0 
+python main.py --config ./config/mixformer_V2_k2.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_k2.pt --device 0 
+python main.py --config ./config/mixformer_K2M.yaml --phase test --save-score True --weights ./checkpoints/mixformer_V2_k2M.pt --device 0 
 ```
 
 **2. Verification report of the UAV dataset** <br />
