@@ -278,11 +278,20 @@ python Ensemble.py \
 --val_sample ./Process_data/CS_test_V1.txt \
 --benchmark V1
 ```
-
 or
-
 ```
- python Ensemble2.py --dataset csv1  --joint-dir  ./Model_inference/Mix_Former/output/skmixf__V1_J --bone-dir ./Model_inference/Mix_Former/output/skmixf__V1_B --joint-motion-dir  ./Model_inference/Mix_Former/output/skmixf__V1_JM  --bone-motion-dir ./Model_inference/Mix_Former/output/skmixf__V1_BM  --joint-k2-dir ./Model_inference/Mix_Former/output/skmixf__V1_k2  --joint-motion-k2-dir ./Model_inference/Mix_Former/output/skmixf__V1_k2M  --joint-dir2  ./Model_inference/Mix_GCN/output/ctrgcn_V1_J --bone-dir2 ./Model_inference/Mix_GCN/output/ctrgcn_V1_B --joint-motion-dir2  ./Model_inference/Mix_GCN/output/ctrgcn_V1_JM  --bone-motion-dir2 ./Model_inference/Mix_GCN/output/ctrgcn_V1_BM --ctrgcn_J3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_J_3D \
+ python Ensemble2.py --dataset csv1 \
+--joint-dir ./Model_inference/Mix_Former/output/skmixf__V1_J \
+--bone-dir ./Model_inference/Mix_Former/output/skmixf__V1_B \
+--joint-motion-dir  ./Model_inference/Mix_Former/output/skmixf__V1_JM \
+--bone-motion-dir ./Model_inference/Mix_Former/output/skmixf__V1_BM \
+--joint-k2-dir ./Model_inference/Mix_Former/output/skmixf__V1_k2 \
+--joint-motion-k2-dir ./Model_inference/Mix_Former/output/skmixf__V1_k2M \
+--joint-dir2  ./Model_inference/Mix_GCN/output/ctrgcn_V1_J \
+--bone-dir2 ./Model_inference/Mix_GCN/output/ctrgcn_V1_B \
+--joint-motion-dir2  ./Model_inference/Mix_GCN/output/ctrgcn_V1_JM \
+--bone-motion-dir2 ./Model_inference/Mix_GCN/output/ctrgcn_V1_BM \
+--ctrgcn_J3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_J_3D \
 --ctrgcn_B3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_B_3D \
 --ctrgcn_JM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_JM_3D \
 --ctrgcn_BM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_BM_3D \
@@ -307,11 +316,21 @@ python Ensemble.py \
 --val_sample ./Process_data/CS_test_V2.txt \
 --benchmark V2
 ```
-
 or
-
 ```
- python Ensemble2.py --dataset csv2  --joint-dir  ./Model_inference/Mix_Former/output/skmixf__V2_J --bone-dir ./Model_inference/Mix_Former/output/skmixf__V2_B --joint-motion-dir  ./Model_inference/Mix_Former/output/skmixf__V2_JM  --bone-motion-dir ./Model_inference/Mix_Former/output/skmixf__V2_BM  --joint-k2-dir ./Model_inference/Mix_Former/output/skmixf__V2_k2  --joint-motion-k2-dir ./Model_inference/Mix_Former/output/skmixf__V2_k2M  --joint-dir2  ./Model_inference/Mix_GCN/output/ctrgcn_V2_J --bone-dir2 ./Model_inference/Mix_GCN/output/ctrgcn_V2_B --joint-motion-dir2  ./Model_inference/Mix_GCN/output/ctrgcn_V2_JM  --bone-motion-dir2 ./Model_inference/Mix_GCN/output/ctrgcn_V2_BM --ctrgcn_J3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_J_3D \
+ python Ensemble2.py \
+--dataset csv2 \
+--joint-dir  ./Model_inference/Mix_Former/output/skmixf__V2_J \
+--bone-dir ./Model_inference/Mix_Former/output/skmixf__V2_B \
+--joint-motion-dir  ./Model_inference/Mix_Former/output/skmixf__V2_JM \
+--bone-motion-dir ./Model_inference/Mix_Former/output/skmixf__V2_BM \
+--joint-k2-dir ./Model_inference/Mix_Former/output/skmixf__V2_k2 \
+--joint-motion-k2-dir ./Model_inference/Mix_Former/output/skmixf__V2_k2M \
+--joint-dir2  ./Model_inference/Mix_GCN/output/ctrgcn_V2_J \
+--bone-dir2 ./Model_inference/Mix_GCN/output/ctrgcn_V2_B \
+--joint-motion-dir2  ./Model_inference/Mix_GCN/output/ctrgcn_V2_JM \
+--bone-motion-dir2 ./Model_inference/Mix_GCN/output/ctrgcn_V2_BM \
+--ctrgcn_J3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_J_3D \
 --ctrgcn_B3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_B_3D \
 --ctrgcn_JM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V3_JM_3D \
 --ctrgcn_BM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V3_BM_3D \
