@@ -63,6 +63,38 @@ def get_parser():
         type = str,
         default = './Model_inference/Mix_GCN/output/ctrgcn_V1_BM_3D/epoch1_test_score.pkl'),
     parser.add_argument(
+        '--tdgcn_J2d_Score', 
+        type = str,
+        default = './Model_inference/Mix_GCN/output/tdgcn_V1_J/epoch1_test_score.pkl')
+    parser.add_argument(
+        '--tdgcn_B2d_Score', 
+        type = str,
+        default = './Model_inference/Mix_GCN/output/tdgcn_V1_B/epoch1_test_score.pkl')
+    parser.add_argument(
+        '--tdgcn_JM2d_Score', 
+        type = str,
+        default = './Model_inference/Mix_GCN/output/tdgcn_V1_JM/epoch1_test_score.pkl')
+    parser.add_argument(
+        '--tdgcn_BM2d_Score', 
+        type = str,
+        default = './Model_inference/Mix_GCN/output/tdgcn_V1_BM/epoch1_test_score.pkl')
+    parser.add_argument(
+        '--mstgcn_J2d_Score', 
+        type = str,
+        default = './Model_inference/Mix_GCN/output/mstgcn_V1_J/epoch1_test_score.pkl')
+    parser.add_argument(
+        '--mstgcn_B2d_Score', 
+        type = str,
+        default = './Model_inference/Mix_GCN/output/mstgcn_V1_B/epoch1_test_score.pkl')
+    parser.add_argument(
+        '--mstgcn_JM2d_Score', 
+        type = str,
+        default = './Model_inference/Mix_GCN/output/mstgcn_V1_JM/epoch1_test_score.pkl')
+    parser.add_argument(
+        '--mstgcn_BM2d_Score', 
+        type = str,
+        default = './Model_inference/Mix_GCN/output/mstgcn_V1_BM/epoch1_test_score.pkl')
+    parser.add_argument(
         '--val_sample', 
         type = str,
         default = './Process_data/CS_test_V1.txt')
@@ -130,20 +162,32 @@ if __name__ == "__main__":
     jm3d_file = args.ctrgcn_JM3d_Score
     bm3d_file = args.ctrgcn_BM3d_Score
     
+    j_file3 = args.tdgcn_J2d_Score
+    b_file3 = args.tdgcn_B2d_Score
+    jm_file3 = args.tdgcn_JM2d_Score
+    bm_file3 = args.tdgcn_BM2d_Score
+    
+    j_file4 = args.mstgcn_J2d_Score
+    b_file4 = args.mstgcn_B2d_Score
+    jm_file4 = args.mstgcn_JM2d_Score
+    bm_file4 = args.mstgcn_BM2d_Score
+    
     val_txt_file = args.val_sample
 
-    File = [j_file, b_file, jm_file, bm_file, k2_file, k2m_file, j_file2, b_file2, jm_file2, bm_file2, j3d_file, b3d_file, jm3d_file, bm3d_file]    
+    File = [j_file, b_file, jm_file, bm_file, k2_file, k2m_file, \
+            j_file2, b_file2, jm_file2, bm_file2, j3d_file, b3d_file, jm3d_file, bm3d_file, \
+            j_file3, b_file3, jm_file3, bm_file3, j_file4, b_file4, jm_file4, bm_file4]    
     if args.benchmark == 'V1':
         Numclass = 155
         Sample_Num = 6307
-        Rate = [0.7, 0.7, 0.3, 0.3, 0.3, 0.3, 0.7, 0.7, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3] 
+        Rate = [1.2, 0.7687800313360855, 0.2, 0.2, 1.2, 1.2, 0.8474862468452808, 1.2, 0.2, 0.2, 0.6721599889400984, 0.8671683827594867, 0.2, 0.2, 0.7934336157353554, 1.2, 0.2, 0.2, 1.2, 1.2, 0.2, 0.2]
         final_score = Cal_Score(File, Rate, Sample_Num, Numclass)
         true_label = gen_label(val_txt_file)
     
     if args.benchmark == 'V2':
         Numclass = 155
         Sample_Num = 6599
-        Rate = [0.7, 0.7, 0.3, 0.3, 0.3, 0.3, 0.7, 0.7, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3]  
+        Rate = [0.7214280414594167, 1.2, 0.2, 1.2, 1.2, 0.9495413913063555, 1.2, 1.2, 0.2, 0.2, 1.2, 1.2, 0.2, 0.2, 1.2, 1.2, 0.2, 0.2, 0.6745433985952421, 0.3926448734729191, 0.2, 0.2]  
         final_score = Cal_Score(File, Rate, Sample_Num, Numclass)
         true_label = gen_label(val_txt_file)
     
