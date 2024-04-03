@@ -16,12 +16,8 @@ def objective(weights):
         _, r44 = r4[i]
         _, r55 = r5[i]
         _, r66 = r6[i]
-        _, r77 = r7[i]
-        _, r88 = r8[i]
-        _, r99 = r9[i]
-        _, r1010 = r10[i]
         
-        r = r11 * weights[0] + r22 * weights[1] + r33 * weights[2] + r44 * weights[3] + r55 * weights[4] + r66 * weights[5]+ r77 * weights[6] + r88 * weights[7] + r99 * weights[8] + r1010 * weights[9]
+        r = r11 * weights[0] + r22 * weights[1] + r33 * weights[2] + r44 * weights[3] + r55 * weights[4] + r66 * weights[5]
         r = np.argmax(r)
         right_num += int(r == int(l))
         total_num += 1
@@ -34,7 +30,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset',
                         required=True,
-                        choices={'csv1','csv2'},
+                        choices={'ntu/xsub', 'ntu/xview', 'ntu120/xsub', 'ntu120/xset', 'NW-UCLA', 'csv1','csv2'},
                         help='the work folder for storing results')
     parser.add_argument('--alpha',
                         default=1,
@@ -49,13 +45,6 @@ if __name__ == "__main__":
     parser.add_argument('--bone-motion-dir', default=None)
     parser.add_argument('--joint-k2-dir', default=None)
     parser.add_argument('--joint-motion-k2-dir', default=None)
-    parser.add_argument('--joint-dir2',
-                        help='Directory containing "epoch1_test_score.pkl" for joint eval results')
-    parser.add_argument('--bone-dir2',
-                        help='Directory containing "epoch1_test_score.pkl" for bone eval results')
-    parser.add_argument('--joint-motion-dir2', default=None)
-    parser.add_argument('--bone-motion-dir2', default=None)
-
 
     arg = parser.parse_args()
 
@@ -89,25 +78,14 @@ if __name__ == "__main__":
     if arg.joint_motion_k2_dir is not None:
         with open(os.path.join(arg.joint_motion_k2_dir, 'epoch1_test_score.pkl'), 'rb') as r6:
             r6 = list(pickle.load(r6).items())
-
-    with open(os.path.join(arg.joint_dir2, 'epoch1_test_score.pkl'), 'rb') as r7:
-        r7 = list(pickle.load(r7).items())
-
-    with open(os.path.join(arg.bone_dir2, 'epoch1_test_score.pkl'), 'rb') as r8:
-        r8 = list(pickle.load(r8).items())
-
-    if arg.joint_motion_dir is not None:
-        with open(os.path.join(arg.joint_motion_dir2, 'epoch1_test_score.pkl'), 'rb') as r9:
-            r9 = list(pickle.load(r9).items())
-    if arg.bone_motion_dir is not None:
-        with open(os.path.join(arg.bone_motion_dir2, 'epoch1_test_score.pkl'), 'rb') as r10:
-            r10 = list(pickle.load(r10).items())
             
     if arg.joint_motion_dir is not None and arg.bone_motion_dir is not None:
-        space = [(0.2, 1.2) for i in range(10)]
+        space = [(0.2, 1.2) for i in range(6)]
         result = gp_minimize(objective, space, n_calls=200, random_state=0)
         print('Maximum accuracy: {:.4f}%'.format(-result.fun * 100))
         print('Optimal weights: {}'.format(result.x))
+
+
 
 
 
