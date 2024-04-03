@@ -303,7 +303,7 @@ or
 --mstgcn_J2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V1_J/epoch1_test_score.pkl \
 --mstgcn_B2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V1_B/epoch1_test_score.pkl \
 --mstgcn_JM2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V1_JM/epoch1_test_score.pkl \
---mstgcn_BM2d_Score /Model_inference/Mix_GCN/output/mstgcn_V1_BM/epoch1_test_score.pkl
+--mstgcn_BM2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V1_BM/epoch1_test_score.pkl
 ```
 **2.** You can obtain the final classification accuracy of CSv2 by running the following code:
 ```
@@ -349,7 +349,7 @@ python Ensemble2.py --benchmark V2 \
 --mstgcn_J2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V2_J/epoch1_test_score.pkl \
 --mstgcn_B2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V2_B/epoch1_test_score.pkl \
 --mstgcn_JM2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V2_JM/epoch1_test_score.pkl \
---mstgcn_BM2d_Score /Model_inference/Mix_GCN/output/mstgcn_V2_BM/epoch1_test_score.pkl
+--mstgcn_BM2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V2_BM/epoch1_test_score.pkl
 ```
 
 ```
