@@ -253,8 +253,8 @@ python Ensemble_MixFormer.py \
 ```
 Please note that when running the above code, you may need to carefully **check the paths** for each **epoch1_test_score.pkl** file and the **val_sample** to prevent errors. <br />
 ```
-**CSv1:** Emsemble MixFormer: 47.73%
-**CSv2:** Emsemble MixFormer: 74.22%
+**CSv1:** Emsemble MixFormer: 47.23%
+**CSv2:** Emsemble MixFormer: 73.19%
 ```
 ## Ensemble Mix_GCN and Mix_Former
 
@@ -319,7 +319,7 @@ or
 
 ```
 **CSv1:** Emsemble: 47.94%
-**CSv2:** Emsemble: 74.49%
+**CSv2:** Emsemble: 74.55%
 ```
 # Suggestion
 We recommend comprehensively considering the three ensemble results **Ensemble Mix_GCN**, **Ensemble Mix_Former**, and **Ensemble Mix_GCN and Mix_Former**.
