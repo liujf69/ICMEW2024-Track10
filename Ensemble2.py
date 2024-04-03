@@ -124,16 +124,16 @@ if __name__ == "__main__":
         with open(os.path.join(arg.bone_motion_dir2, 'epoch1_test_score.pkl'), 'rb') as r10:
             r10 = list(pickle.load(r10).items())
     if arg.ctrgcn_J3d_Score is not None:
-        with open(os.path.join(arg.ctrgcn_J3d_Score, 'epoch1_test_score.pkl'), 'rb') as r10:
+        with open(os.path.join(arg.ctrgcn_J3d_Score, 'epoch1_test_score.pkl'), 'rb') as r11:
             r11 = list(pickle.load(r11).items())
     if arg.ctrgcn_B3d_Score is not None:
-        with open(os.path.join(arg.ctrgcn_B3d_Score, 'epoch1_test_score.pkl'), 'rb') as r10:
+        with open(os.path.join(arg.ctrgcn_B3d_Score, 'epoch1_test_score.pkl'), 'rb') as r12:
             r12 = list(pickle.load(r12).items())
     if arg.ctrgcn_JM3d_Score is not None:
-        with open(os.path.join(arg.ctrgcn_JM3d_Score, 'epoch1_test_score.pkl'), 'rb') as r10:
+        with open(os.path.join(arg.ctrgcn_JM3d_Score, 'epoch1_test_score.pkl'), 'rb') as r13:
             r13 = list(pickle.load(r13).items())
     if arg.ctrgcn_BM3d_Score is not None:
-        with open(os.path.join(arg.ctrgcn_BM3d_Score, 'epoch1_test_score.pkl'), 'rb') as r10:
+        with open(os.path.join(arg.ctrgcn_BM3d_Score, 'epoch1_test_score.pkl'), 'rb') as r14:
             r14 = list(pickle.load(r14).items())
             
     if arg.joint_motion_dir is not None and arg.bone_motion_dir is not None:
