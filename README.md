@@ -281,21 +281,29 @@ python Ensemble.py \
 ```
 or
 ```
- python Ensemble2.py --dataset csv1 \
---joint-dir ./Model_inference/Mix_Former/output/skmixf__V1_J \
---bone-dir ./Model_inference/Mix_Former/output/skmixf__V1_B \
---joint-motion-dir  ./Model_inference/Mix_Former/output/skmixf__V1_JM \
---bone-motion-dir ./Model_inference/Mix_Former/output/skmixf__V1_BM \
---joint-k2-dir ./Model_inference/Mix_Former/output/skmixf__V1_k2 \
---joint-motion-k2-dir ./Model_inference/Mix_Former/output/skmixf__V1_k2M \
---joint-dir2  ./Model_inference/Mix_GCN/output/ctrgcn_V1_J \
---bone-dir2 ./Model_inference/Mix_GCN/output/ctrgcn_V1_B \
---joint-motion-dir2  ./Model_inference/Mix_GCN/output/ctrgcn_V1_JM \
---bone-motion-dir2 ./Model_inference/Mix_GCN/output/ctrgcn_V1_BM \
---ctrgcn_J3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_J_3D \
---ctrgcn_B3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_B_3D \
---ctrgcn_JM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_JM_3D \
---ctrgcn_BM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_BM_3D \
+ python Ensemble2.py --benchmark V1 \
+--mixformer_J_Score ./Model_inference/Mix_Former/output/skmixf__V1_J/epoch1_test_score.pkl \
+--mixformer_B_Score ./Model_inference/Mix_Former/output/skmixf__V1_B/epoch1_test_score.pkl \
+--mixformer_JM_Score  ./Model_inference/Mix_Former/output/skmixf__V1_JM/epoch1_test_score.pkl \
+--mixformer_BM_Score ./Model_inference/Mix_Former/output/skmixf__V1_BM/epoch1_test_score.pkl \
+--mixformer_k2_Score ./Model_inference/Mix_Former/output/skmixf__V1_k2/epoch1_test_score.pk \
+--mixformer_k2M_Score ./Model_inference/Mix_Former/output/skmixf__V1_k2M/epoch1_test_score.pk \
+--ctrgcn_J2d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_J/epoch1_test_score.pkl \
+--ctrgcn_B2d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_B/epoch1_test_score.pkl \
+--ctrgcn_JM2d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_JM/epoch1_test_score.pkl \
+--ctrgcn_BM2d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_BM/epoch1_test_score.pkl \
+--ctrgcn_J3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_J_3D/epoch1_test_score.pkl \
+--ctrgcn_B3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_B_3D/epoch1_test_score.pkl \
+--ctrgcn_JM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_JM_3D/epoch1_test_score.pkl \
+--ctrgcn_BM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_BM_3D/epoch1_test_score.pkl \
+--tdgcn_J2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V1_J/epoch1_test_score.pkl \
+--tdgcn_B2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V1_B/epoch1_test_score.pkl \
+--tdgcn_JM2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V1_JM/epoch1_test_score.pkl \
+--tdgcn_BM2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V1_BM/epoch1_test_score.pkl \
+--mstgcn_J2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V1_J/epoch1_test_score.pkl \
+--mstgcn_B2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V1_B/epoch1_test_score.pkl \
+--mstgcn_JM2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V1_JM/epoch1_test_score.pkl \
+--mstgcn_BM2d_Score /Model_inference/Mix_GCN/output/mstgcn_V1_BM/epoch1_test_score.pkl \
 ```
 **2.** You can obtain the final classification accuracy of CSv2 by running the following code:
 ```
@@ -319,22 +327,29 @@ python Ensemble.py \
 ```
 or
 ```
- python Ensemble2.py \
---dataset csv2 \
---joint-dir  ./Model_inference/Mix_Former/output/skmixf__V2_J \
---bone-dir ./Model_inference/Mix_Former/output/skmixf__V2_B \
---joint-motion-dir  ./Model_inference/Mix_Former/output/skmixf__V2_JM \
---bone-motion-dir ./Model_inference/Mix_Former/output/skmixf__V2_BM \
---joint-k2-dir ./Model_inference/Mix_Former/output/skmixf__V2_k2 \
---joint-motion-k2-dir ./Model_inference/Mix_Former/output/skmixf__V2_k2M \
---joint-dir2  ./Model_inference/Mix_GCN/output/ctrgcn_V2_J \
---bone-dir2 ./Model_inference/Mix_GCN/output/ctrgcn_V2_B \
---joint-motion-dir2  ./Model_inference/Mix_GCN/output/ctrgcn_V2_JM \
---bone-motion-dir2 ./Model_inference/Mix_GCN/output/ctrgcn_V2_BM \
---ctrgcn_J3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_J_3D \
---ctrgcn_B3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_B_3D \
---ctrgcn_JM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V3_JM_3D \
---ctrgcn_BM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V3_BM_3D \
+python Ensemble2.py --benchmark V2 \
+--mixformer_J_Score ./Model_inference/Mix_Former/output/skmixf__V2_J/epoch1_test_score.pkl \
+--mixformer_B_Score ./Model_inference/Mix_Former/output/skmixf__V2_B/epoch1_test_score.pkl \
+--mixformer_JM_Score  ./Model_inference/Mix_Former/output/skmixf__V2_JM/epoch1_test_score.pkl \
+--mixformer_BM_Score ./Model_inference/Mix_Former/output/skmixf__V2_BM/epoch1_test_score.pkl \
+--mixformer_k2_Score ./Model_inference/Mix_Former/output/skmixf__V2_k2/epoch1_test_score.pk \
+--mixformer_k2M_Score ./Model_inference/Mix_Former/output/skmixf__V2_k2M/epoch1_test_score.pk \
+--ctrgcn_J2d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_J/epoch1_test_score.pkl \
+--ctrgcn_B2d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_B/epoch1_test_score.pkl \
+--ctrgcn_JM2d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_JM/epoch1_test_score.pkl \
+--ctrgcn_BM2d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_BM/epoch1_test_score.pkl \
+--ctrgcn_J3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_J_3D/epoch1_test_score.pkl \
+--ctrgcn_B3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_B_3D/epoch1_test_score.pkl \
+--ctrgcn_JM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_JM_3D/epoch1_test_score.pkl \
+--ctrgcn_BM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_BM_3D/epoch1_test_score.pkl \
+--tdgcn_J2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V2_J/epoch1_test_score.pkl \
+--tdgcn_B2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V2_B/epoch1_test_score.pkl \
+--tdgcn_JM2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V2_JM/epoch1_test_score.pkl \
+--tdgcn_BM2d_Score ./Model_inference/Mix_GCN/output/tdgcn_V2_BM/epoch1_test_score.pkl \
+--mstgcn_J2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V2_J/epoch1_test_score.pkl \
+--mstgcn_B2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V2_B/epoch1_test_score.pkl \
+--mstgcn_JM2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V2_JM/epoch1_test_score.pkl \
+--mstgcn_BM2d_Score /Model_inference/Mix_GCN/output/mstgcn_V2_BM/epoch1_test_score.pkl \
 ```
 
 ```
