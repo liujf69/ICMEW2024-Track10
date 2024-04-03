@@ -354,7 +354,7 @@ python Ensemble2.py --benchmark V2 \
 
 ```
 **CSv1:** Emsemble: 47.94%
-**CSv2:** Emsemble: 74.55%
+**CSv2:** Emsemble: 75.36%
 ```
 # Suggestion
 We recommend comprehensively considering the three ensemble results **Ensemble Mix_GCN**, **Ensemble Mix_Former**, and **Ensemble Mix_GCN and Mix_Former**.
