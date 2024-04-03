@@ -253,7 +253,7 @@ python Ensemble_MixFormer.py \
 ```
 Please note that when running the above code, you may need to carefully **check the paths** for each **epoch1_test_score.pkl** file and the **val_sample** to prevent errors. <br />
 ```
-**CSv1:** Emsemble MixFormer: 48.73%
+**CSv1:** Emsemble MixFormer: 47.73%
 **CSv2:** Emsemble MixFormer: 74.22%
 ```
 ## Ensemble Mix_GCN and Mix_Former
@@ -278,6 +278,15 @@ python Ensemble.py \
 --val_sample ./Process_data/CS_test_V1.txt \
 --benchmark V1
 ```
+
+or
+
+```
+ python Ensemble2.py --dataset csv1  --joint-dir  ./Model_inference/Mix_Former/output/skmixf__V1_J --bone-dir ./Model_inference/Mix_Former/output/skmixf__V1_B --joint-motion-dir  ./Model_inference/Mix_Former/output/skmixf__V1_JM  --bone-motion-dir ./Model_inference/Mix_Former/output/skmixf__V1_BM  --joint-k2-dir ./Model_inference/Mix_Former/output/skmixf__V1_k2  --joint-motion-k2-dir ./Model_inference/Mix_Former/output/skmixf__V1_k2M  --joint-dir2  ./Model_inference/Mix_GCN/output/ctrgcn_V1_J --bone-dir2 ./Model_inference/Mix_GCN/output/ctrgcn_V1_B --joint-motion-dir2  ./Model_inference/Mix_GCN/output/ctrgcn_V1_JM  --bone-motion-dir2 ./Model_inference/Mix_GCN/output/ctrgcn_V1_BM --ctrgcn_J3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_J_3D \
+--ctrgcn_B3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_B_3D \
+--ctrgcn_JM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_JM_3D \
+--ctrgcn_BM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_BM_3D \
+```
 **2.** You can obtain the final classification accuracy of CSv2 by running the following code:
 ```
 python Ensemble.py \
@@ -299,8 +308,17 @@ python Ensemble.py \
 --benchmark V2
 ```
 
+or
+
 ```
-**CSv1:** Emsemble: 48.94%
+ python Ensemble2.py --dataset csv2  --joint-dir  ./Model_inference/Mix_Former/output/skmixf__V2_J --bone-dir ./Model_inference/Mix_Former/output/skmixf__V2_B --joint-motion-dir  ./Model_inference/Mix_Former/output/skmixf__V2_JM  --bone-motion-dir ./Model_inference/Mix_Former/output/skmixf__V2_BM  --joint-k2-dir ./Model_inference/Mix_Former/output/skmixf__V2_k2  --joint-motion-k2-dir ./Model_inference/Mix_Former/output/skmixf__V2_k2M  --joint-dir2  ./Model_inference/Mix_GCN/output/ctrgcn_V2_J --bone-dir2 ./Model_inference/Mix_GCN/output/ctrgcn_V2_B --joint-motion-dir2  ./Model_inference/Mix_GCN/output/ctrgcn_V2_JM  --bone-motion-dir2 ./Model_inference/Mix_GCN/output/ctrgcn_V2_BM --ctrgcn_J3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_J_3D \
+--ctrgcn_B3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_B_3D \
+--ctrgcn_JM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V3_JM_3D \
+--ctrgcn_BM3d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V3_BM_3D \
+```
+
+```
+**CSv1:** Emsemble: 47.94%
 **CSv2:** Emsemble: 74.49%
 ```
 # Suggestion
