@@ -127,7 +127,7 @@ if __name__ == "__main__":
     bm_file2 = args.ctrgcn_BM2d_Score
     j3d_file = args.ctrgcn_J3d_Score
     b3d_file = args.ctrgcn_B3d_Score
-    jm3d_fil = args.ctrgcn_JM3d_Score
+    jm3d_file = args.ctrgcn_JM3d_Score
     bm3d_file = args.ctrgcn_BM3d_Score
     
     val_txt_file = args.val_sample
