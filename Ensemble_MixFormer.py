@@ -59,6 +59,24 @@ if __name__ == "__main__":
     else:
         raise NotImplementedError
 
+     # another method to get label
+    '''
+    label = []
+    if 'csv1' in arg.dataset:
+        val_txt = np.loadtxt('./Process_data/CS_test_V1.txt', dtype = str)
+        for idx, name in enumerate(val_txt):
+            label1 = int(name.split('A')[1][:3])
+            label.append(label1)
+        label = torch.from_numpy(np.array(label))
+        
+    if 'csv2' in arg.dataset:
+        val_txt = np.loadtxt('./Process_data/CS_test_V2.txt', dtype = str)
+        for idx, name in enumerate(val_txt):
+            label1 = int(name.split('A')[1][:3])
+            label.append(label1)
+        label = torch.from_numpy(np.array(label))
+        '''
+
     with open(os.path.join(arg.joint_dir, 'epoch1_test_score.pkl'), 'rb') as r1:
         r1 = list(pickle.load(r1).items())
 
