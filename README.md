@@ -228,6 +228,9 @@ Please note that when running the above code, you may need to carefully **check 
 **1.** After running the code of model inference, we will obtain classification score files corresponding to each weight in the **output folder** named **epoch1_test_score.pkl**. <br />
 **2.** You can obtain the final classification accuracy of CSv1 by running the following code:
 ```
+pip install scikit-optimize
+```
+```
 python Ensemble_MixFormer.py \
 --mixformer_J_Score ./Model_inference/Mix_Former/output/skmixf__V1_J/epoch1_test_score.pkl \
 --mixformer_B_Score ./Model_inference/Mix_Former/output/skmixf__V1_B/epoch1_test_score.pkl \
@@ -235,7 +238,6 @@ python Ensemble_MixFormer.py \
 --mixformer_BM_Score ./Model_inference/Mix_Former/output/skmixf__V1_BM/epoch1_test_score.pkl \
 --mixformer_k2_Score ./Model_inference/Mix_Former/output/skmixf__V1_k2/epoch1_test_score.pkl \
 --mixformer_k2M_Score ./Model_inference/Mix_Former/output/skmixf__V1_k2M/epoch1_test_score.pkl \
---val_sample ./Process_data/CS_test_V1.txt \
 --benchmark V1
 ```
 
@@ -248,7 +250,6 @@ python Ensemble_MixFormer.py \
 --mixformer_BM_Score ./Model_inference/Mix_Former/output/skmixf__V2_BM/epoch1_test_score.pkl \
 --mixformer_k2_Score ./Model_inference/Mix_Former/output/skmixf__V2_k2/epoch1_test_score.pkl \
 --mixformer_k2M_Score ./Model_inference/Mix_Former/output/skmixf__V2_k2M/epoch1_test_score.pkl \
---val_sample ./Process_data/CS_test_V2.txt \
 --benchmark V2
 ```
 Please note that when running the above code, you may need to carefully **check the paths** for each **epoch1_test_score.pkl** file and the **val_sample** to prevent errors. <br />
