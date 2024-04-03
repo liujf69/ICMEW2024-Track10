@@ -286,8 +286,8 @@ or
 --mixformer_B_Score ./Model_inference/Mix_Former/output/skmixf__V1_B/epoch1_test_score.pkl \
 --mixformer_JM_Score  ./Model_inference/Mix_Former/output/skmixf__V1_JM/epoch1_test_score.pkl \
 --mixformer_BM_Score ./Model_inference/Mix_Former/output/skmixf__V1_BM/epoch1_test_score.pkl \
---mixformer_k2_Score ./Model_inference/Mix_Former/output/skmixf__V1_k2/epoch1_test_score.pk \
---mixformer_k2M_Score ./Model_inference/Mix_Former/output/skmixf__V1_k2M/epoch1_test_score.pk \
+--mixformer_k2_Score ./Model_inference/Mix_Former/output/skmixf__V1_k2/epoch1_test_score.pkl \
+--mixformer_k2M_Score ./Model_inference/Mix_Former/output/skmixf__V1_k2M/epoch1_test_score.pkl \
 --ctrgcn_J2d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_J/epoch1_test_score.pkl \
 --ctrgcn_B2d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_B/epoch1_test_score.pkl \
 --ctrgcn_JM2d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V1_JM/epoch1_test_score.pkl \
@@ -303,7 +303,7 @@ or
 --mstgcn_J2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V1_J/epoch1_test_score.pkl \
 --mstgcn_B2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V1_B/epoch1_test_score.pkl \
 --mstgcn_JM2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V1_JM/epoch1_test_score.pkl \
---mstgcn_BM2d_Score /Model_inference/Mix_GCN/output/mstgcn_V1_BM/epoch1_test_score.pkl \
+--mstgcn_BM2d_Score /Model_inference/Mix_GCN/output/mstgcn_V1_BM/epoch1_test_score.pkl
 ```
 **2.** You can obtain the final classification accuracy of CSv2 by running the following code:
 ```
@@ -332,8 +332,8 @@ python Ensemble2.py --benchmark V2 \
 --mixformer_B_Score ./Model_inference/Mix_Former/output/skmixf__V2_B/epoch1_test_score.pkl \
 --mixformer_JM_Score  ./Model_inference/Mix_Former/output/skmixf__V2_JM/epoch1_test_score.pkl \
 --mixformer_BM_Score ./Model_inference/Mix_Former/output/skmixf__V2_BM/epoch1_test_score.pkl \
---mixformer_k2_Score ./Model_inference/Mix_Former/output/skmixf__V2_k2/epoch1_test_score.pk \
---mixformer_k2M_Score ./Model_inference/Mix_Former/output/skmixf__V2_k2M/epoch1_test_score.pk \
+--mixformer_k2_Score ./Model_inference/Mix_Former/output/skmixf__V2_k2/epoch1_test_score.pkl \
+--mixformer_k2M_Score ./Model_inference/Mix_Former/output/skmixf__V2_k2M/epoch1_test_score.pkl \
 --ctrgcn_J2d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_J/epoch1_test_score.pkl \
 --ctrgcn_B2d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_B/epoch1_test_score.pkl \
 --ctrgcn_JM2d_Score ./Model_inference/Mix_GCN/output/ctrgcn_V2_JM/epoch1_test_score.pkl \
@@ -349,7 +349,7 @@ python Ensemble2.py --benchmark V2 \
 --mstgcn_J2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V2_J/epoch1_test_score.pkl \
 --mstgcn_B2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V2_B/epoch1_test_score.pkl \
 --mstgcn_JM2d_Score ./Model_inference/Mix_GCN/output/mstgcn_V2_JM/epoch1_test_score.pkl \
---mstgcn_BM2d_Score /Model_inference/Mix_GCN/output/mstgcn_V2_BM/epoch1_test_score.pkl \
+--mstgcn_BM2d_Score /Model_inference/Mix_GCN/output/mstgcn_V2_BM/epoch1_test_score.pkl
 ```
 
 ```
