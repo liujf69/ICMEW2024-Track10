@@ -1,5 +1,5 @@
 # ICMEW2024-Track10
-This is the official repo of HDBN and our work is one of the top solutions in the Multi-Modal Video Reasoning and Analyzing Competition (MMVRAC) of 2024 ICME Grand Challenge ICMEW2024-Track. <br />
+This is the official repo of **HDBN** and our work is one of the **top solutions** in the Multi-Modal Video Reasoning and Analyzing Competition (**MMVRAC**) of **2024 ICME** Grand Challenge **Track10**. <br />
 ![image](https://github.com/liujf69/ICMEW2024-Track10/blob/main/framework.png)
 Please install the environment based on **mix_GCN.yml**. <br />
 # Dataset
