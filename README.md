@@ -380,8 +380,14 @@ python Ensemble2.py --benchmark V2 \
 We recommend comprehensively considering the three ensemble results **Ensemble Mix_GCN**, **Ensemble Mix_Former**, and **Ensemble Mix_GCN and Mix_Former**.
 # Thanks
 Our work is based on the [CTR-GCN](https://github.com/Uason-Chen/CTR-GCN), [TD-GCN](https://github.com/liujf69/TD-GCN-Gesture), [MotionBERT](https://github.com/Walter0807/MotionBERT), [Ske-MixFormer](https://github.com/ElricXin/Skeleton-MixFormer).
+# Citation
+```
+@inproceedings{liu2024HDBN,
+  author={Liu, Jinfu and Yin, Baiqiao and Lin, Jiaying and Wen, Jiajun and Li, Yue and Liu, Mengyuan},
+  title={HDBN: A Novel Hybrid Dual-branch Network for Robust Skeleton-based Action Recognition}, 
+  booktitle={Proceedings of the IEEE International Conference on Multimedia and Expo Workshop (ICMEW)}, 
+  year={2024}
+}
+```
 # Contact
-```
-Author List: Jinfu Liu, Baiqiao Yin, Jiaying Lin, Jiajun Wen, Yue Li, Mengyuan Liu.
-```
 For any questions, feel free to contact: liujf69@mail2.sysu.edu.cn
