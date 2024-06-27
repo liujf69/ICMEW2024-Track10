@@ -1,4 +1,4 @@
-# ICMEW2024-Track1
+# ICMEW2024-Track10
 This is the official repo of **HDBN** and our work is one of the **top solutions** in the Multi-Modal Video Reasoning and Analyzing Competition (**MMVRAC**) of **2024 ICME** Grand Challenge **Track10**. <br />
 Our work "[HDBN: A Novel Hybrid Dual-branch Network for Robust Skeleton-based Action Recognition](https://arxiv.org/abs/2404.15719)" is accepted by **2024 IEEE International Conference on Multimedia and Expo Workshop (ICMEW)**. <br />
 [![Paper](https://img.shields.io/badge/cs.CV-Paper-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/abs/2404.15719)
