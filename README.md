@@ -379,6 +379,18 @@ python Ensemble2.py --benchmark V2 \
 ```
 # Suggestion
 We recommend comprehensively considering the three ensemble results **Ensemble Mix_GCN**, **Ensemble Mix_Former**, and **Ensemble Mix_GCN and Mix_Former**.
+
+# Model training
+```
+# Mix_GCN Example
+cd ./Model_inference/Mix_GCN
+python main.py --config ./config/ctrgcn_V1_J.yaml --device 0
+
+# Mix_Former Example
+cd ./Model_inference/Mix_Former
+python main.py --config ./config/mixformer_V1_J.yaml --device 0
+```
+
 # Thanks
 Our work is based on the [CTR-GCN](https://github.com/Uason-Chen/CTR-GCN), [TD-GCN](https://github.com/liujf69/TD-GCN-Gesture), [MotionBERT](https://github.com/Walter0807/MotionBERT), [Ske-MixFormer](https://github.com/ElricXin/Skeleton-MixFormer).
 # Citation
