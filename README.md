@@ -382,6 +382,7 @@ We recommend comprehensively considering the three ensemble results **Ensemble M
 
 # Model training
 ```
+# Change the configuration file (.yaml) of the corresponding modality.
 # Mix_GCN Example
 cd ./Model_inference/Mix_GCN
 python main.py --config ./config/ctrgcn_V1_J.yaml --device 0
